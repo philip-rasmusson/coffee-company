@@ -12,9 +12,10 @@ const navbarMenu = () => {
           <span> | </span>
           <li>ENVIROMENT</li>
         </ul>
-        <input placeholder="SEARCH..." />
-      </div>
-      `)
+        </div>
+        `)
 }
 
 document.getElementById('navbar').innerHTML = navbarMenu()
+
+     // <input placeholder="SEARCH..." />
