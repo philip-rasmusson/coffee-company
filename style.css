@@ -122,6 +122,25 @@ nav {
   grid-row: 2;
 }
 
+.section-two-left {}
+
+.section-two-center {}
+
+.section-two-right {}
+
+.section-two-left, .section-two-center, .section-two-right {
+  grid-row: 2/-2;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.section-two-circle {
+  width: 5rem;
+  height: 5rem;
+  border: black 5px solid;
+  border-radius: 50%;
+}
+
 #section-three {
   grid-row: 3;
   background-color: rgb(21, 97, 107);
@@ -173,4 +192,14 @@ section {
   background-color: rgb(145, 145, 145);
   opacity: 0.3;
   z-index: 300;
+}
+
+.section-three-text {
+  grid-row: 5/8;
+  grid-column: 5/9;
+}
+
+.section-three-button {
+  grid-row: 8;
+  grid-column: 5/9;
 }
