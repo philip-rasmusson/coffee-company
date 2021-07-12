@@ -14,7 +14,7 @@ const navbarMenu = () => {
 }
 
 document.querySelector('#navbar-one').innerHTML = navbarMenu()
-document.querySelector('#navbar-two').innerHTML = navbarMenu()
-document.querySelector('#navbar-three').innerHTML = navbarMenu()
+// document.querySelector('#navbar-two').innerHTML = navbarMenu()
+// document.querySelector('#navbar-three').innerHTML = navbarMenu()
 
      // <input placeholder="SEARCH..." />
