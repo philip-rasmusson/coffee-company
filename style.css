@@ -5,6 +5,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #f1f1f1;
@@ -35,6 +39,8 @@ a:hover {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-row: 2/2;
@@ -73,9 +79,23 @@ nav {
   width: 6rem;
 }
 
+section {
+  position: relative;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100vw;
+  height: 100vh;
+  min-height: 50vw;
+}
+
+/* SECTION ONE */
+
 #section-one {
   grid-row: 1;
   height: 100vh;
+  box-shadow: rgb(128, 128, 128) 0 0.5rem 0.5rem;
 }
 
 #section-one h2, #section-one p {
@@ -118,54 +138,6 @@ nav {
   grid-column: 3/7;
 }
 
-#section-two {
-  grid-row: 2;
-}
-
-.section-two-left {}
-
-.section-two-center {}
-
-.section-two-right {}
-
-.section-two-left, .section-two-center, .section-two-right {
-  grid-row: 2/-2;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.section-two-circle {
-  width: 5rem;
-  height: 5rem;
-  border: black 5px solid;
-  border-radius: 50%;
-}
-
-#section-three {
-  grid-row: 3;
-  background-color: rgb(21, 97, 107);
-}
-
-#section-four {
-  grid-row: 4;
-  background-color: rgb(206, 193, 77);
-}
-
-#section-five {
-  grid-row: 5;
-  background-color: rgb(139, 11, 75);
-}
-
-section {
-  position: relative;
-  grid-column: 1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  width: 100vw;
-  height: 100vh;
-}
-
 .section-one-video {
   position: absolute;
   top: 0;
@@ -176,6 +148,119 @@ section {
   object-position: center;
 }
 
+.section-one-movie-overlay {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(145, 145, 145);
+  opacity: 0.4;
+  z-index: 300;
+}
+
+/* SECTION TWO */
+
+#section-two {
+  grid-row: 2;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.section-two-circle {
+  grid-row: 1;
+  grid-column: 1;
+  width: 20vw;
+  height: 20vw;
+  border: black 3px solid;
+  opacity: 0.6;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+#section-two img {
+  justify-self: center;
+  align-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  width: 13vw;
+}
+
+#section-two p {
+  grid-row: 2;
+  margin: 3vw;
+  font-size: 1.2vw;
+  height: 7vw;
+  text-align: justify;
+}
+
+#section-two button {
+  grid-row: 3;
+  width: 10vw;
+  height: 4vw;
+  justify-self: center;
+  border-radius: 4vw;
+  background-color: #A3814E;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1.2vw;
+}
+
+.section-two-left {
+  grid-column: 2/5;
+}
+
+.section-two-center {
+  grid-column: 5/8;
+}
+
+.section-two-right {
+  grid-column: 8/11;
+}
+
+.section-two-left, .section-two-center, .section-two-right {
+  grid-row: 3/-2;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+
+/* SECTION THREE */
+
+#section-three {
+  grid-row: 3;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(128, 128, 128) 0 -0.5rem 0.5rem;
+}
+
+.section-three-text {
+  justify-self: center;
+  grid-row: 5/9;
+  grid-column: 9/-1;
+  text-align: justify;
+  font-size: 1.7vw;
+  padding: 2vw;
+  color: #f1f1f1;
+  /* background-color: rgba(255, 255, 255, 0.795); */
+  text-shadow: #454545 3px 3px 3px;
+  border-radius: 2vw;
+  margin: 3vw;
+  height: 21.3vw;
+  z-index: 500;
+}
+
+.section-three-button {
+  grid-row: 11;
+  grid-column: 2/4;
+  width: 20vw;
+  border-radius: 4vw;
+  justify-self: center;
+  background-color: #A3814E;
+  color: #f1f1f1;
+  opacity: 1;
+  font-size: 1.5vw;
+  z-index: 500;
+}
+
 .section-three-img, .section-five-img {
   grid-row: 1/-1;
   grid-column: 1/-1;
@@ -184,22 +269,32 @@ section {
   object-fit: cover;
 }
 
-.section-one-movie-overlay {
+.section-three-img {
+  justify-self: right;
+}
+
+.section-three-img-overlay {
   grid-row: 1/-1;
   grid-column: 1/-1;
   width: 100%;
   height: 100%;
   background-color: rgb(145, 145, 145);
-  opacity: 0.3;
-  z-index: 300;
+  opacity: 0.7;
+  /* z-index: 100; */
 }
 
-.section-three-text {
-  grid-row: 5/8;
-  grid-column: 5/9;
+/* SECTION FOUR */
+
+#section-four {
+  grid-row: 4;
+  background-color: rgb(206, 193, 77);
 }
 
-.section-three-button {
-  grid-row: 8;
-  grid-column: 5/9;
+/* SECTION FIVE */
+
+#section-five {
+  grid-row: 5;
+  background-color: rgb(139, 11, 75);
 }
+
+/* SECTION SIX / FOOTER */
