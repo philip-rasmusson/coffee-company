@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="style.css">
   <link href="./fontawesome/css/all.css" rel="stylesheet">
-  <!--load all styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Company</title>
 </head>
@@ -16,6 +18,7 @@
 
     <!-- SECTION ONE -->
     <section id="section-one">
+      <div class="blur"></div>
       <nav id="navbar-one" class="font-white"></nav>
       <video src="./img/Coffee - 40167.mp4" type="video/mp4" class="section-one-video" autoplay loop muted>
       </video>
@@ -23,8 +26,9 @@
       <div class="sub-menu font-white">
         <h2>LEARN ABOUT OUR PRODUCTS</h2>
       </div>
-      <h2 class="section-one-text-h2 font-white">Lorem ipsum</h2>
-      <p class="section-one-text-p font-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consectetur,
+      <h2 class="section-one-text-h2 font-white font-one">Lorem ipsum</h2>
+      <p class="section-one-text-p font-white font-one-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Et, consectetur,
         deserunt
         dicta possimus iusto
         debitis adipisci esse voluptatum est minus veniam, illo repellat quasi pariatur dolore modi distinctio
@@ -65,13 +69,17 @@
     </section>
 
     <!-- SECTION THREE -->
-    <section id="section-three" class="hidden">
+    <section id="section-three" class="">
       <nav id="navbar-two" class="font-white"></nav>
-      <img src="./img/coffee-2714970_1920.jpg" alt="" class="section-three-img">
-      <p class="section-three-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc. In aliquam sem fringilla
-        ut. Eget velit aliquet sagittis id consectetur purus ut. </p>
-      <button class="section-three-button box-shadow big-button">JOIN OUR TEAM</button>
+      <img src="./img/beverage-1869598_1920.jpg" alt="" class="section-three-img">
+      <div class="section-three-text-wrapper">
+        <h2 class="section-three-title font-one font-white">WANT TO WORK FOR US?</h2>
+        <p class="section-three-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc. In aliquam sem fringilla
+          ut. Eget velit aliquet sagittis id consectetur purus ut. </p>
+      </div>
+      <!-- <button class="section-three-button box-shadow big-button">JOIN OUR TEAM</button> -->
+      <div class="section-three-banner font-white font-one box-shadow">JOIN OUR TEAM</div>
       <div class="section-three-img-overlay"></div>
     </section>
 
