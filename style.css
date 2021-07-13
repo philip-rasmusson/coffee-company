@@ -391,6 +391,7 @@ input, textarea {
   border-radius: 1vw;
   padding: 1vw;
   background-color: #ffe6693a;
+  font-size: 1.2vw;
 }
 
 .form-row-1 {
@@ -463,8 +464,8 @@ input, textarea {
 
 .section-five-paragraph {
   grid-row: -6/-1;
-  grid-column: 2/5;
-  font-size: 1vw;
+  grid-column: 2/6;
+  font-size: 1.4vw;
   z-index: 500;
 }
 
@@ -633,8 +634,10 @@ input, textarea {
   .section-three-text {
     font-size: 1.3rem;
   }
+  /* SECTION FIVE  */
   .section-five-paragraph {
-    font-size: 0.9vw;
+    font-size: 1.05rem;
+    max-width: 27rem;
   }
 }
 
