@@ -39,9 +39,8 @@ a:hover {
 }
 
 .page-wrapper {
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(6, auto);
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -699,7 +698,7 @@ input, textarea {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media (max-width: 760px) {
   #section-three, #section-four, #section-five, #section-six, nav, .section-one-video, .sub-menu-two {
     display: none;
   }
@@ -761,7 +760,7 @@ input, textarea {
 
 /* SECTION TWO */
 
-#section-two {
+/* #section-two {
   grid-template-columns: auto;
   grid-template-rows: 20vw 60vh 60vh 60vh 5vw;
 }
@@ -800,7 +799,7 @@ input, textarea {
 .section-two-right {
   border-top: #A3814E solid 1px;
   grid-row: 4;
-}
+} */
 
 .small-button {
   width: 50vw;
