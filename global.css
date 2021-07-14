@@ -73,9 +73,10 @@ section {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   width: 100vw;
+}
+
+.section-height {
   height: 100vh;
-  min-height: 65vw;
-  max-height: 80vw;
 }
 
 .small-button {
