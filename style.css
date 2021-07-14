@@ -2,6 +2,10 @@
   display: none;
 }
 
+.show {
+  display: flex;
+}
+
 .navbar-menu {
   display: grid;
   width: fit-content;
