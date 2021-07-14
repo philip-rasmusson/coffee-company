@@ -1,0 +1,101 @@
+@media (min-width: 1200px) {
+  section {
+    min-height: 50vw;
+  }
+  .sub-menu {
+    display: flex;
+    /* grid-template-columns: 1;
+    grid-template-rows: 1; */
+    grid-row: 1/-1;
+    grid-column: -1;
+    background-color: #A3814E;
+    /* z-index: 700; */
+    width: 3rem;
+    height: 20rem;
+    /* position: absolute; */
+    top: 30%;
+    /* right: 0; */
+    /* border-radius: 1rem 0 0 1rem; */
+  }
+  .sub-menu h2 {
+    margin: 1rem;
+    font-size: 1rem;
+    /* writing-mode: vertical-lr;
+    text-orientation: mixed; */
+  }
+  #section-two {
+    grid-row: 2;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  #section-two div {
+    margin: auto 3rem;
+  }
+  .section-two-circle {
+    /* grid-row: 1;
+    grid-column: 1; */
+    width: 12rem;
+    height: 12rem;
+    /* border: black 3px solid;
+    opacity: 0.6;
+    border-radius: 50%; */
+    justify-self: center;
+    align-self: center;
+  }
+  #section-two img {
+    /* justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 1; */
+    width: 7.3rem;
+  }
+  #section-two p {
+    /* grid-row: 2; */
+    margin: auto;
+    width: 15rem;
+    font-size: 1rem;
+    height: 4rem;
+    text-align: justify;
+  }
+  #section-two button {
+    /* grid-row: 3; */
+    justify-self: center;
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3rem;
+  }
+  .section-two-left {
+    grid-column: 2/5;
+  }
+  .section-two-center {
+    grid-column: 5/8;
+  }
+  .section-two-right {
+    grid-column: 8/11;
+  }
+  /* SECTION THREE */
+  .section-three-text-wrapper {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    max-width: 40vw;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+  .section-three-button {
+    font-size: 1.4rem;
+  }
+  .section-three-title {
+    font-size: 2.6rem;
+  }
+  .section-three-text {
+    font-size: 1.3rem;
+  }
+  /* SECTION FIVE  */
+  .section-five-paragraph {
+    font-size: 1.05rem;
+    max-width: 27rem;
+  }
+}
