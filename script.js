@@ -34,4 +34,4 @@ document.querySelector('#navbar-one-small-screen').innerHTML = navbarMenuSmall()
 // document.querySelector('#navbar-two-small-screen').innerHTML = navbarMenuSmall()
 // document.querySelector('#navbar-three-small-screen').innerHTML = navbarMenuSmall()
 
-     // <input placeholder="SEARCH..." />
+// <input placeholder="SEARCH..." />
