@@ -148,6 +148,9 @@
     padding: 2vw;
   }
   /* SECTION FOUR{ */
+  .section-four-bg {
+    display: none;
+  }
   .section-four-left, .section-four-right, .section-four-title, .section-four-left form {
     grid-column: 1/-1;
     width: 70vw;
@@ -218,6 +221,9 @@
     align-self: center;
   }
   /* SECTION SIX */
+  /* #section-six {
+    height: 120vh;
+  } */
   .rights {
     text-align: center;
     font-size: 3vw;
@@ -258,6 +264,7 @@
     margin: 0 5vw;
     font-size: 4vw;
     grid-gap: 2vw;
+    border: none;
   }
   .section-six-find-us-textarea p {
     grid-column: 1;
@@ -272,8 +279,5 @@
   .section-six-find-us-textarea h1 {
     grid-row: 13/-1;
     align-self: center;
-  }
-  #section-six {
-    height: 120vh;
   }
 }

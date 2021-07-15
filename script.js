@@ -1,7 +1,7 @@
 
 const showNavbar = () => {
   const navbar = document.querySelector('#navbar-one-small-screen')
-  navbar.className === 'font-white' ? navbar.className += ' hidden' : navbar.className = 'font-white'
+  navbar.className === 'font-white' ? navbar.className += 'hidden' : navbar.className = 'font-white'
 
   console.log(navbar.className)
 }
