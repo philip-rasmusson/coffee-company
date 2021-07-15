@@ -25,10 +25,10 @@
   .navbar-menu-small ul li a {
     z-index: 10002;
   }
-  section {
+  /* section {
     min-height: auto;
     max-height: none;
-  }
+  } */
   .fas {
     color: #f1f1f1;
   }
@@ -78,23 +78,35 @@
   }
   /* SECTION TWO */
   #section-two {
-    grid-template-rows: 20vw 60vh 60vh 60vh 5vw;
-    height: auto;
+    grid-template-rows: repeat(3, auto);
+    margin: 10vw 0;
   }
   .section-two-circle {
     width: 50vw;
     height: 50vw;
+    grid-row: 1/3;
+    grid-column: 1;
   }
   #section-two img {
+    grid-row: 1/3;
+    grid-column: 1;
     width: 30vw;
   }
+  #section-two button {
+    grid-row: 5;
+    margin: 5vw auto;
+  }
   #section-two p {
+    grid-column: 1;
+    grid-row: 3;
     font-size: 3vw;
     width: 70vw;
     justify-self: center;
+    align-self: center;
   }
   .section-two-left, .section-two-center, .section-two-right {
     grid-column: 1/-1;
+    grid-template-columns: repeat(12, auto);
     width: 80vw;
     margin: 0 auto;
     padding: 5vw;
@@ -114,7 +126,7 @@
     width: 50vw;
     font-size: 4vw;
     height: 10vw;
-    margin: 10vw auto;
+    margin: auto;
   }
   /* SECTION THREE */
   .section-three-text-wrapper {

@@ -425,6 +425,7 @@ input, textarea {
   grid-row: -1;
   background-color: #c4a06bb4;
   /* background-color: #b18748; */
+  height: 130vh;
 }
 
 .fab {
@@ -467,12 +468,12 @@ input, textarea {
 }
 
 .section-six-find-us-textarea {
-  grid-row: 3 / -2;
+  grid-row: 2 / -3;
   grid-column: 6/-2;
   border: #A3814E solid 1px;
   border-radius: 2vw;
   display: grid;
-  grid-template-rows: repeat(19, auto);
+  grid-template-rows: repeat(12, auto);
   grid-template-columns: repeat(2, auto);
   padding: 1rem;
 }
@@ -480,10 +481,11 @@ input, textarea {
 .section-six-find-us-textarea {
   font-weight: 100;
   font-size: 2vw;
+  overflow-y: hidden;
 }
 
 .section-six-find-us-textarea h1 {
-  grid-row: -2;
+  grid-row: -1;
   grid-column: 1/-1;
   justify-self: center;
 }
