@@ -3,7 +3,7 @@
     min-height: 50vw;
   }
   .sub-menu {
-    display: flex;
+    display: none;
     grid-row: 1/-1;
     grid-column: -1;
     background-color: #A3814E;

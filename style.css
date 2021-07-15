@@ -1,4 +1,4 @@
-.hidden, #navbar-one-small-screen, .navbar-bars, .header-img-mobile {
+.hidden, #navbar-one-small-screen, .navbar-bars, .header-img-mobile, .section-five-img-mobile {
   display: none;
 }
 
@@ -110,7 +110,7 @@
 
 #section-two {
   grid-row: 2;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .section-two-circle {
